@@ -34,7 +34,8 @@ window.onload = function () {
         if (data.status === "success") {
           loginstatus.innerText = "👍Login successful...";
           loginstatus.style.color = "green";
-          alert("login Successfull!"); // Redirect to the dashboard
+         window.location.href =
+            "https://adherent9870.github.io/Dashboard-SocialHub/"; // Redirect to the dashboard
         } else {
           loginstatus.innerHTML = `👎Login failed. Please try again.<br><b>Reason:</b> ${data.message}`;
           loginstatus.style.color = "red";
